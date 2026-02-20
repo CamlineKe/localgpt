@@ -1,4 +1,10 @@
 services:
+  local_llm:
+    provider:
+      type: model
+      options:
+        model: ai/smolvlm:500M
+
   fastapi:
     build:
       context: ./app
